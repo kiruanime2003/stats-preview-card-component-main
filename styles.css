@@ -71,7 +71,7 @@ img {
   letter-spacing: 1px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 410px) {
   #box {
     flex-direction: column;
     width: 90vw;
