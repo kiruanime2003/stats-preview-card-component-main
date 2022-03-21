@@ -71,10 +71,10 @@ img {
   letter-spacing: 1px;
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 420px) {
   #box {
     flex-direction: column;
-    width: 90vw;
+    width: 22rem;
   }
 
   img {
