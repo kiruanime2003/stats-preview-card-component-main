@@ -1,0 +1,134 @@
+$color-1: hsl(233, 47%, 7%);
+$color-2: hsl(244, 38%, 16%);
+$color-3: hsl(277, 64%, 61%);
+$color-4: hsl(0, 0%, 100%);
+$color-5: hsla(0, 0%, 100%, 0.75);
+$color-6: hsla(0, 0%, 100%, 0.6);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color-1;
+}
+
+#box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $color-2;
+  display: flex;
+  flex-direction: row-reverse;
+  border-radius: 2%;
+  width: 69rem;
+}
+
+img {
+  filter: sepia(40%) saturate(800%) brightness(45%) hue-rotate(235deg);
+  border-top-right-radius: 2%;
+  border-bottom-right-radius: 2%;
+}
+
+#box1 {
+  h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: $color-4;
+    margin: 70px 80px 25px 70px;
+    word-wrap: break-word;
+    width: 400px;
+    font-size: 37px;
+  }
+
+  #para {
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    color: $color-5;
+    font-weight: 400;
+    word-wrap: break-word;
+    width: 350px;
+    line-height: 1.6;
+    margin: 20px 80px 25px 70px;
+  }
+}
+
+#stats {
+  .stat-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  strong {
+    color: $color-4;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+
+  p {
+    color: $color-6;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  display: flex;
+  flex-direction: row;
+  margin: 80px 80px 20px 70px;
+}
+
+@media screen and (max-width: 375px) {
+  #box {
+    flex-direction: column;
+    width: 90vw;
+  }
+
+  img {
+    width: 100%;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 2%;
+  }
+
+  #box1 {
+    h1 {
+      margin: 40px auto 25px auto;
+      width: 300px;
+      font-size: 30px;
+      text-align: center;
+    }
+
+    #para {
+      width: 260px;
+      line-height: 1.6;
+      margin: 20px auto 25px auto;
+      text-align: center;
+    }
+  }
+
+  #stats {
+    .stat-div {
+      align-items: center;
+      height: 100%;
+      margin: 13px auto 13px auto;
+    }
+  
+    strong {
+      font-size: 25px;
+    }
+  
+    p {
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    flex-direction: column;
+    margin: 30px auto 0 auto;
+  }
+}

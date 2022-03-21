@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #090b1a;
+}
+
+#box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1b1938;
+  display: flex;
+  flex-direction: row-reverse;
+  border-radius: 2%;
+  width: 69rem;
+}
+
+img {
+  filter: sepia(40%) saturate(800%) brightness(45%) hue-rotate(235deg);
+  border-top-right-radius: 2%;
+  border-bottom-right-radius: 2%;
+}
+
+#box1 h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: white;
+  margin: 70px 80px 25px 70px;
+  word-wrap: break-word;
+  width: 400px;
+  font-size: 37px;
+}
+#box1 #para {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 400;
+  word-wrap: break-word;
+  width: 350px;
+  line-height: 1.6;
+  margin: 20px 80px 25px 70px;
+}
+
+#stats {
+  display: flex;
+  flex-direction: row;
+  margin: 80px 80px 20px 70px;
+}
+#stats .stat-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#stats strong {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+#stats p {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 375px) {
+  #box {
+    flex-direction: column;
+    width: 90vw;
+  }
+
+  img {
+    width: 100%;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 2%;
+  }
+
+  #box1 h1 {
+    margin: 40px auto 25px auto;
+    width: 300px;
+    font-size: 30px;
+    text-align: center;
+  }
+  #box1 #para {
+    width: 260px;
+    line-height: 1.6;
+    margin: 20px auto 25px auto;
+    text-align: center;
+  }
+
+  #stats {
+    flex-direction: column;
+    margin: 30px auto 0 auto;
+  }
+  #stats .stat-div {
+    align-items: center;
+    height: 100%;
+    margin: 13px auto 13px auto;
+  }
+  #stats strong {
+    font-size: 25px;
+  }
+  #stats p {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+}/*# sourceMappingURL=styles.css.map */
